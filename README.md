@@ -13,7 +13,7 @@
 ## Installation
 
 ```console
-pip install redis-annex
+python -m pip install redis-annex
 ```
 
 ## License
