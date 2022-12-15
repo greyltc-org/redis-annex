@@ -1,7 +1,6 @@
 [build-system]
 requires = [
   "hatchling",
-  "hatch-vcs",
 ]
 build-backend = "hatchling.build"
 
@@ -37,10 +36,7 @@ Issues = "https://github.com/greyltc-org/redis-annex/issues"
 Source = "https://github.com/greyltc-org/redis-annex"
 
 [tool.hatch.version]
-source = "vcs"
-
-[tool.hatch.build.hooks.vcs]
-version-file = "src/redis_annex/__about__.py"
+path = "src/redis_annex/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
