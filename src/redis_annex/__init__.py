@@ -1,4 +1,7 @@
 from redis_annex.__about__ import __version__
+from redis import Redis
+from redis.asyncio.client import Pipeline
+from typing import cast
 
 def uadd(r: Redis, key, val) -> tuple[int | None, bool | None]:
     """add a value to a sorted set (key) that maintains insertion order via score (can be zero)"""
