@@ -1,4 +1,4 @@
-from redis_annex.__about__ import __version__, __version_tuple__
+from redis_annex.__about__ import __version__
 
 def uadd(r: Redis, key, val) -> tuple[int | None, bool | None]:
     """add a value to a sorted set (key) that maintains insertion order via score (can be zero)"""
